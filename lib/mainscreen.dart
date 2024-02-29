@@ -57,7 +57,7 @@ class MainScreen extends StatelessWidget {
                   padding: const EdgeInsets.all(15),
                   margin: const EdgeInsets.symmetric(horizontal: 100),
                   decoration: BoxDecoration(
-                    color: Colors.amber,
+                    color: Color.fromARGB(255, 250, 143, 76),
                     borderRadius: BorderRadius.circular(80),
                   ),
                   child: Center(
