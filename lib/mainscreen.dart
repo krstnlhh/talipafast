@@ -31,7 +31,7 @@ class MainScreen extends StatelessWidget {
 
               //app title
               Text(
-                'FindMyDorm',
+                'Talipafast',
                 style: TextStyle(
                   color: Colors.grey[00],
                   fontWeight: FontWeight.bold,
