@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import '../screenpages/login_screen.dart';
+
 //import '../JsonModels/users.dart';
 //import '../SQLite/sqlite.dart';
 
@@ -36,9 +36,9 @@ class _SignUpState extends State<SignUpScreen> {
 
                   const ListTile(
                     title: Text(
-                      "Register New Account",
+                      "Join Talipafast",
                       style:
-                          TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                     ),
                   ),
 
@@ -50,7 +50,7 @@ class _SignUpState extends State<SignUpScreen> {
                         const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
-                        color: Colors.deepPurple.withOpacity(.2)),
+                        color: Colors.red.withOpacity(.2)),
                     child: TextFormField(
                       controller: username,
                       validator: (value) {
@@ -74,7 +74,7 @@ class _SignUpState extends State<SignUpScreen> {
                         const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
-                        color: Colors.deepPurple.withOpacity(.2)),
+                        color: Colors.redAccent.withOpacity(.2)),
                     child: TextFormField(
                       controller: password,
                       validator: (value) {
@@ -110,7 +110,7 @@ class _SignUpState extends State<SignUpScreen> {
                         const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
-                        color: Colors.deepPurple.withOpacity(.2)),
+                        color: Colors.red.withOpacity(.2)),
                     child: TextFormField(
                       controller: confirmPassword,
                       validator: (value) {
@@ -140,14 +140,14 @@ class _SignUpState extends State<SignUpScreen> {
                     ),
                   ),
 
-                  const SizedBox(height: 10),
+                  const SizedBox(height: 15),
                   //Login button
                   Container(
-                    height: 55,
+                    height: 48,
                     width: MediaQuery.of(context).size.width * .9,
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8),
-                        color: Colors.amber),
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.redAccent),
                     child: TextButton(
                         onPressed: () {
                           //After success user creation go to login screen
@@ -166,7 +166,7 @@ class _SignUpState extends State<SignUpScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Text("Already have an account?"),
+                      const Text("Not a new user?"),
                       TextButton(
                           onPressed: () {
                             //Navigate to sign up

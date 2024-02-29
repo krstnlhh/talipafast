@@ -54,15 +54,15 @@ class MainScreen extends StatelessWidget {
                   );
                 },
                 child: Container(
-                  padding: const EdgeInsets.all(15),
+                  padding: const EdgeInsets.all(10),
                   margin: const EdgeInsets.symmetric(horizontal: 100),
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 250, 143, 76),
-                    borderRadius: BorderRadius.circular(80),
+                    color: Colors.red.withOpacity(.2),
+                    borderRadius: BorderRadius.circular(10),
                   ),
                   child: Center(
                     child: Text(
-                      "Log In",
+                      "Sign Up",
                       style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
@@ -91,14 +91,13 @@ class MainScreen extends StatelessWidget {
                   padding: const EdgeInsets.all(18),
                   margin: const EdgeInsets.symmetric(horizontal: 100),
                   decoration: BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: BorderRadius.circular(80),
+                    color: Colors.transparent,
                   ),
                   child: Center(
                     child: Text(
-                      "Sign Up",
+                      "Log In",
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Colors.black,
                         fontWeight: FontWeight.bold,
                         fontSize: 16,
                       ),
